@@ -1,0 +1,56 @@
+:root {
+    --backgroundColor: #202020;
+    --themeColor: #F28775;
+    --actionColor: #CC3333;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family: Roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    font-weight: bolder;
+}
+
+body {
+    background: var(--backgroundColor);
+}
+
+main {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: var(--themeColor);
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+
+    color: white;
+}
+
+.footerLink {
+    color: var(--themeColor);
+    text-decoration: none;
+    transition: 100ms ease;
+    border-bottom: solid 0 var(--actionColor);
+}
+
+.footerLink:hover {
+    color: var(--actionColor);
+    border-bottom: solid 3px var(--actionColor);
+}
